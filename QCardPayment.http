@@ -1,0 +1,6 @@
+@QCardPayment_HostAddress = http://localhost:5229
+
+GET {{QCardPayment_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
