@@ -1,0 +1,839 @@
+2026-06-08 15:01:25.556 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-08 15:01:26.755 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-08 15:01:26.913 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:01:27.003 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-08 15:01:27.038 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-08 15:01:27.047 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-08 15:01:27.047 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-08 15:01:27.048 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-08 15:01:27.062 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:01:27.062 +03:00 [INF] Hosting environment: Development
+2026-06-08 15:01:27.062 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-08 15:01:27.211 +03:00 [INF] Server desktop-jt59vo4:2456:23f72d0c successfully announced in 149.7637 ms
+2026-06-08 15:01:27.213 +03:00 [INF] Server desktop-jt59vo4:2456:23f72d0c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-08 15:01:27.220 +03:00 [INF] Server desktop-jt59vo4:2456:23f72d0c all the dispatchers started
+2026-06-08 15:01:47.508 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:01:47.644 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 134.5573ms
+2026-06-08 15:01:47.688 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:01:47.700 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 12.9933ms
+2026-06-08 15:01:47.883 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:01:48.098 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 214.8341ms
+2026-06-08 15:02:09.825 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:02:09.828 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 2.7711ms
+2026-06-08 15:02:09.883 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:02:09.883 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 0.8112ms
+2026-06-08 15:02:10.026 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:02:10.033 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.0738ms
+2026-06-08 15:02:14.415 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:02:14.416 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 0.8843ms
+2026-06-08 15:02:14.454 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:02:14.455 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 0.5638ms
+2026-06-08 15:02:14.588 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:02:14.596 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.098ms
+2026-06-08 15:02:16.024 +03:00 [INF] Server desktop-jt59vo4:2456:23f72d0c caught stopping signal...
+2026-06-08 15:02:16.025 +03:00 [INF] Application is shutting down...
+2026-06-08 15:02:16.546 +03:00 [INF] Server desktop-jt59vo4:2456:23f72d0c caught stopped signal...
+2026-06-08 15:02:16.610 +03:00 [INF] Server desktop-jt59vo4:2456:23f72d0c All dispatchers stopped
+2026-06-08 15:02:16.616 +03:00 [INF] Server desktop-jt59vo4:2456:23f72d0c successfully reported itself as stopped in 5.2816 ms
+2026-06-08 15:02:16.616 +03:00 [INF] Server desktop-jt59vo4:2456:23f72d0c has been stopped in total 591.6996 ms
+2026-06-08 15:02:27.093 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-08 15:02:27.799 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-08 15:02:27.972 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:02:28.040 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-08 15:02:28.091 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-08 15:02:28.103 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-08 15:02:28.103 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-08 15:02:28.103 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-08 15:02:28.121 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:02:28.121 +03:00 [INF] Hosting environment: Development
+2026-06-08 15:02:28.121 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-08 15:02:28.253 +03:00 [INF] Server desktop-jt59vo4:7204:ce1cc8a0 successfully announced in 133.0791 ms
+2026-06-08 15:02:28.256 +03:00 [INF] Server desktop-jt59vo4:7204:ce1cc8a0 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-08 15:02:28.265 +03:00 [INF] Server desktop-jt59vo4:7204:ce1cc8a0 all the dispatchers started
+2026-06-08 15:02:50.023 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/register - application/json 97
+2026-06-08 15:02:50.066 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-06-08 15:02:50.096 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-08 15:02:50.117 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(QCardPayment.dto.RegisterRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:02:51.290 +03:00 [ERR] Failed executing DbCommand (27ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-06-08 15:02:51.318 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'QCardPayment.DataBase.DataContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AspNetUsers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:ca7628f4-3708-41b1-83ba-4e5838a2e8b1
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AspNetUsers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:ca7628f4-3708-41b1-83ba-4e5838a2e8b1
+Error Number:208,State:1,Class:16
+2026-06-08 15:02:51.332 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.Register (QCardPayment) in 1210.3718ms
+2026-06-08 15:02:51.333 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-08 15:02:51.335 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AspNetUsers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.UserValidator`1.ValidateUserName(UserManager`1 manager, TUser user)
+   at Microsoft.AspNetCore.Identity.UserValidator`1.ValidateAsync(UserManager`1 manager, TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.ValidateUserAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateCoreAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at QCardPayment.Controller.AuthController.Register(RegisterRequest registerRequest) in C:\Users\user\QCardPayment\Controller\AuthController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:ca7628f4-3708-41b1-83ba-4e5838a2e8b1
+Error Number:208,State:1,Class:16
+2026-06-08 15:02:51.371 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/register - 500 null text/plain; charset=utf-8 1349.3021ms
+2026-06-08 15:02:58.700 +03:00 [INF] Server desktop-jt59vo4:7204:ce1cc8a0 caught stopping signal...
+2026-06-08 15:02:58.702 +03:00 [INF] Application is shutting down...
+2026-06-08 15:02:59.228 +03:00 [INF] Server desktop-jt59vo4:7204:ce1cc8a0 caught stopped signal...
+2026-06-08 15:02:59.512 +03:00 [INF] Server desktop-jt59vo4:7204:ce1cc8a0 All dispatchers stopped
+2026-06-08 15:02:59.526 +03:00 [INF] Server desktop-jt59vo4:7204:ce1cc8a0 successfully reported itself as stopped in 9.2109 ms
+2026-06-08 15:02:59.526 +03:00 [INF] Server desktop-jt59vo4:7204:ce1cc8a0 has been stopped in total 824.93 ms
+2026-06-08 15:03:53.558 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-08 15:03:53.588 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-06-08 15:03:53.607 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-06-08 15:03:53.663 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-06-08 15:03:53.670 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-08 15:03:53.670 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-08 15:03:53.679 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-06-08 15:03:53.687 +03:00 [INF] Applying migration '20260608120345_AppUser'.
+2026-06-08 15:03:53.722 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2026-06-08 15:03:53.725 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2026-06-08 15:03:53.729 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2026-06-08 15:03:53.730 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2026-06-08 15:03:53.735 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2026-06-08 15:03:53.737 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2026-06-08 15:03:53.739 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2026-06-08 15:03:53.743 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2026-06-08 15:03:53.745 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2026-06-08 15:03:53.746 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2026-06-08 15:03:53.746 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2026-06-08 15:03:53.747 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2026-06-08 15:03:53.748 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2026-06-08 15:03:53.748 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2026-06-08 15:03:53.751 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260608120345_AppUser', N'10.0.8');
+2026-06-08 15:03:53.755 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-06-08 15:04:03.270 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-08 15:04:04.120 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-08 15:04:04.269 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:04:04.339 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-08 15:04:04.412 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-08 15:04:04.420 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-08 15:04:04.421 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-08 15:04:04.421 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-08 15:04:04.434 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:04:04.434 +03:00 [INF] Hosting environment: Development
+2026-06-08 15:04:04.434 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-08 15:04:04.553 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:04:04.597 +03:00 [INF] Server desktop-jt59vo4:23184:3f1ed9e7 successfully announced in 160.4162 ms
+2026-06-08 15:04:04.602 +03:00 [INF] Server desktop-jt59vo4:23184:3f1ed9e7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-08 15:04:04.676 +03:00 [INF] Server desktop-jt59vo4:23184:3f1ed9e7 all the dispatchers started
+2026-06-08 15:04:04.792 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 238.6832ms
+2026-06-08 15:04:04.838 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:04:04.842 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 4.6678ms
+2026-06-08 15:04:05.037 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:04:05.139 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.4222ms
+2026-06-08 15:04:24.324 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/register - application/json 95
+2026-06-08 15:04:24.329 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-06-08 15:04:24.367 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-08 15:04:24.387 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(QCardPayment.dto.RegisterRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:04:25.545 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-06-08 15:04:25.758 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2026-06-08 15:04:25.776 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-06-08 15:04:25.782 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.Register (QCardPayment) in 1390.8659ms
+2026-06-08 15:04:25.783 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-08 15:04:25.792 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/register - 200 null text/plain; charset=utf-8 1467.883ms
+2026-06-08 15:06:53.005 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:06:53.006 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 1.0167ms
+2026-06-08 15:06:53.094 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:06:53.096 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 1.2329ms
+2026-06-08 15:06:53.326 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:06:53.337 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.2388ms
+2026-06-08 15:06:59.912 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:06:59.913 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 0.9144ms
+2026-06-08 15:06:59.961 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:06:59.962 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 1.3137ms
+2026-06-08 15:07:00.077 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:07:00.084 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.3569ms
+2026-06-08 15:07:02.759 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:07:02.760 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 1.0311ms
+2026-06-08 15:07:02.793 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:07:02.793 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 0.6435ms
+2026-06-08 15:07:02.921 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:07:02.928 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.2805ms
+2026-06-08 15:09:13.906 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:09:13.907 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 1.0591ms
+2026-06-08 15:09:13.954 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:09:13.954 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 0.5326ms
+2026-06-08 15:09:14.156 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:09:14.164 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.855ms
+2026-06-08 15:26:19.259 +03:00 [INF] Server desktop-jt59vo4:23184:3f1ed9e7 caught stopping signal...
+2026-06-08 15:26:19.274 +03:00 [INF] Application is shutting down...
+2026-06-08 15:26:19.807 +03:00 [INF] Server desktop-jt59vo4:23184:3f1ed9e7 caught stopped signal...
+2026-06-08 15:26:20.153 +03:00 [INF] Server desktop-jt59vo4:23184:3f1ed9e7 All dispatchers stopped
+2026-06-08 15:26:20.174 +03:00 [INF] Server desktop-jt59vo4:23184:3f1ed9e7 successfully reported itself as stopped in 16.1708 ms
+2026-06-08 15:26:20.174 +03:00 [INF] Server desktop-jt59vo4:23184:3f1ed9e7 has been stopped in total 907.8137 ms
+2026-06-08 15:26:37.284 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-08 15:26:38.369 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-08 15:26:38.585 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:26:38.662 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-08 15:26:38.730 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-08 15:26:38.745 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-08 15:26:38.745 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-08 15:26:38.746 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-08 15:26:38.765 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:26:38.765 +03:00 [INF] Hosting environment: Development
+2026-06-08 15:26:38.765 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-08 15:26:38.918 +03:00 [INF] Server desktop-jt59vo4:20940:43d93d4a successfully announced in 152.6881 ms
+2026-06-08 15:26:38.921 +03:00 [INF] Server desktop-jt59vo4:20940:43d93d4a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-08 15:26:38.942 +03:00 [INF] Server desktop-jt59vo4:20940:43d93d4a all the dispatchers started
+2026-06-08 15:26:44.372 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:26:44.542 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 171.1922ms
+2026-06-08 15:26:44.639 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:26:44.643 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 6.3416ms
+2026-06-08 15:26:44.968 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:26:45.166 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 197.6209ms
+2026-06-08 15:27:15.766 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/register - application/json 91
+2026-06-08 15:27:15.771 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-06-08 15:27:15.817 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-08 15:27:15.840 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(QCardPayment.dto.RegisterRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:27:15.846 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.Register (QCardPayment) in 1.3116ms
+2026-06-08 15:27:15.846 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-08 15:27:15.847 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'QCardPayment.Service.TokenService' while attempting to activate 'QCardPayment.Controller.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method12(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-08 15:27:15.859 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/register - 500 null text/plain; charset=utf-8 93.2015ms
+2026-06-08 15:29:26.487 +03:00 [INF] Server desktop-jt59vo4:20940:43d93d4a caught stopping signal...
+2026-06-08 15:29:26.490 +03:00 [INF] Application is shutting down...
+2026-06-08 15:29:27.002 +03:00 [INF] Server desktop-jt59vo4:20940:43d93d4a caught stopped signal...
+2026-06-08 15:29:27.143 +03:00 [INF] Server desktop-jt59vo4:20940:43d93d4a All dispatchers stopped
+2026-06-08 15:29:27.149 +03:00 [INF] Server desktop-jt59vo4:20940:43d93d4a successfully reported itself as stopped in 4.6313 ms
+2026-06-08 15:29:27.149 +03:00 [INF] Server desktop-jt59vo4:20940:43d93d4a has been stopped in total 659.4836 ms
+2026-06-08 15:29:41.077 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-08 15:29:42.229 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-08 15:29:42.422 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:29:42.513 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-08 15:29:42.571 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-08 15:29:42.583 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-08 15:29:42.583 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-08 15:29:42.584 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-08 15:29:42.643 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:29:42.643 +03:00 [INF] Hosting environment: Development
+2026-06-08 15:29:42.643 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-08 15:29:42.846 +03:00 [INF] Server desktop-jt59vo4:26492:b09ea637 successfully announced in 213.9277 ms
+2026-06-08 15:29:42.849 +03:00 [INF] Server desktop-jt59vo4:26492:b09ea637 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-08 15:29:42.874 +03:00 [INF] Server desktop-jt59vo4:26492:b09ea637 all the dispatchers started
+2026-06-08 15:29:44.805 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:29:45.026 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 219.7308ms
+2026-06-08 15:29:45.078 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:29:45.086 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 9.4707ms
+2026-06-08 15:29:45.365 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:29:45.561 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 196.3945ms
+2026-06-08 15:29:54.696 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/register - application/json 91
+2026-06-08 15:29:54.703 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-06-08 15:29:54.753 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-08 15:29:54.786 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(QCardPayment.dto.RegisterRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:29:56.778 +03:00 [INF] Executed DbCommand (46ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-06-08 15:29:56.981 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2026-06-08 15:29:56.997 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-06-08 15:29:57.002 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.Register (QCardPayment) in 2211.9498ms
+2026-06-08 15:29:57.002 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-08 15:29:57.010 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/register - 200 null text/plain; charset=utf-8 2313.5489ms
+2026-06-08 15:30:06.233 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/Login - application/json 91
+2026-06-08 15:30:06.236 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:30:06.247 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[QCardPayment.dto.LoginResponse] LoginAsync(QCardPayment.dto.LoginRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:30:06.329 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@loginRequest_PhoneNumber='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[PhoneNumber] = @loginRequest_PhoneNumber
+2026-06-08 15:30:06.394 +03:00 [INF] Executing ObjectResult, writing value of type 'QCardPayment.dto.LoginResponse'.
+2026-06-08 15:30:06.397 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.LoginAsync (QCardPayment) in 149.4959ms
+2026-06-08 15:30:06.397 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:30:06.398 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/Login - 200 null application/json; charset=utf-8 164.3103ms
+2026-06-08 15:31:59.057 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:31:59.058 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 0.7363ms
+2026-06-08 15:31:59.169 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:31:59.169 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 0.2227ms
+2026-06-08 15:31:59.346 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:31:59.355 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.0314ms
+2026-06-08 15:32:00.055 +03:00 [INF] Server desktop-jt59vo4:26492:b09ea637 caught stopping signal...
+2026-06-08 15:32:00.056 +03:00 [INF] Application is shutting down...
+2026-06-08 15:32:00.567 +03:00 [INF] Server desktop-jt59vo4:26492:b09ea637 caught stopped signal...
+2026-06-08 15:32:00.823 +03:00 [INF] Server desktop-jt59vo4:26492:b09ea637 All dispatchers stopped
+2026-06-08 15:32:00.840 +03:00 [INF] Server desktop-jt59vo4:26492:b09ea637 successfully reported itself as stopped in 8.2069 ms
+2026-06-08 15:32:00.840 +03:00 [INF] Server desktop-jt59vo4:26492:b09ea637 has been stopped in total 785.1982 ms
+2026-06-08 15:32:11.074 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-08 15:32:11.844 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-08 15:32:11.935 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:32:11.988 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-08 15:32:12.016 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-08 15:32:12.023 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-08 15:32:12.023 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-08 15:32:12.024 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-08 15:32:12.034 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:32:12.034 +03:00 [INF] Hosting environment: Development
+2026-06-08 15:32:12.034 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-08 15:32:12.177 +03:00 [INF] Server desktop-jt59vo4:24832:808bffdc successfully announced in 143.0659 ms
+2026-06-08 15:32:12.181 +03:00 [INF] Server desktop-jt59vo4:24832:808bffdc is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-08 15:32:12.243 +03:00 [INF] Server desktop-jt59vo4:24832:808bffdc all the dispatchers started
+2026-06-08 15:32:31.056 +03:00 [INF] Server desktop-jt59vo4:24832:808bffdc caught stopping signal...
+2026-06-08 15:32:31.058 +03:00 [INF] Application is shutting down...
+2026-06-08 15:32:31.352 +03:00 [INF] Server desktop-jt59vo4:24832:808bffdc All dispatchers stopped
+2026-06-08 15:32:31.356 +03:00 [INF] Server desktop-jt59vo4:24832:808bffdc successfully reported itself as stopped in 1.8716 ms
+2026-06-08 15:32:31.356 +03:00 [INF] Server desktop-jt59vo4:24832:808bffdc has been stopped in total 298.4213 ms
+2026-06-08 15:32:41.666 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-08 15:32:42.386 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-08 15:32:42.513 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:32:42.564 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-08 15:32:42.608 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-08 15:32:42.618 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-08 15:32:42.618 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-08 15:32:42.618 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-08 15:32:42.632 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:32:42.632 +03:00 [INF] Hosting environment: Development
+2026-06-08 15:32:42.632 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-08 15:32:42.746 +03:00 [INF] Server desktop-jt59vo4:968:dcdbdc21 successfully announced in 113.2542 ms
+2026-06-08 15:32:42.749 +03:00 [INF] Server desktop-jt59vo4:968:dcdbdc21 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-08 15:32:42.767 +03:00 [INF] Server desktop-jt59vo4:968:dcdbdc21 all the dispatchers started
+2026-06-08 15:32:50.870 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/Login - application/json 91
+2026-06-08 15:32:50.905 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-06-08 15:32:50.925 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:32:50.942 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[QCardPayment.dto.LoginResponse] LoginAsync(QCardPayment.dto.LoginRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:32:52.018 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@loginRequest_PhoneNumber='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[PhoneNumber] = @loginRequest_PhoneNumber
+2026-06-08 15:32:52.165 +03:00 [INF] Executing ObjectResult, writing value of type 'QCardPayment.dto.LoginResponse'.
+2026-06-08 15:32:52.176 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.LoginAsync (QCardPayment) in 1230.8048ms
+2026-06-08 15:32:52.177 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:32:52.185 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/Login - 200 null application/json; charset=utf-8 1315.6414ms
+2026-06-08 15:33:22.636 +03:00 [INF] Server desktop-jt59vo4:968:dcdbdc21 caught stopping signal...
+2026-06-08 15:33:22.638 +03:00 [INF] Application is shutting down...
+2026-06-08 15:33:23.020 +03:00 [INF] Server desktop-jt59vo4:968:dcdbdc21 All dispatchers stopped
+2026-06-08 15:33:23.025 +03:00 [INF] Server desktop-jt59vo4:968:dcdbdc21 successfully reported itself as stopped in 4.6947 ms
+2026-06-08 15:33:23.025 +03:00 [INF] Server desktop-jt59vo4:968:dcdbdc21 has been stopped in total 388.0116 ms
+2026-06-08 15:33:31.953 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-08 15:33:32.288 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-08 15:33:32.376 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:33:32.409 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-08 15:33:32.437 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-08 15:33:32.443 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-08 15:33:32.443 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-08 15:33:32.443 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-08 15:33:32.451 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:33:32.451 +03:00 [INF] Hosting environment: Development
+2026-06-08 15:33:32.451 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-08 15:33:32.532 +03:00 [INF] Server desktop-jt59vo4:10092:b93ae473 successfully announced in 80.1441 ms
+2026-06-08 15:33:32.534 +03:00 [INF] Server desktop-jt59vo4:10092:b93ae473 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-08 15:33:32.544 +03:00 [INF] Server desktop-jt59vo4:10092:b93ae473 all the dispatchers started
+2026-06-08 15:33:52.417 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/Login - application/json 91
+2026-06-08 15:33:52.450 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-06-08 15:33:52.468 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:33:52.483 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[QCardPayment.dto.LoginResponse] LoginAsync(QCardPayment.dto.LoginRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:33:53.417 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@loginRequest_PhoneNumber='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[PhoneNumber] = @loginRequest_PhoneNumber
+2026-06-08 15:33:53.547 +03:00 [INF] Executing ObjectResult, writing value of type 'QCardPayment.dto.LoginResponse'.
+2026-06-08 15:33:53.556 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.LoginAsync (QCardPayment) in 1070.5008ms
+2026-06-08 15:33:53.557 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:33:53.564 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/Login - 200 null application/json; charset=utf-8 1147.2826ms
+2026-06-08 15:34:01.858 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:34:01.919 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 60.7679ms
+2026-06-08 15:34:01.951 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:34:01.962 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 10.4776ms
+2026-06-08 15:34:02.065 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:34:02.153 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.3429ms
+2026-06-08 15:34:07.563 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/Login - application/json 91
+2026-06-08 15:34:07.565 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:34:07.565 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[QCardPayment.dto.LoginResponse] LoginAsync(QCardPayment.dto.LoginRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:34:07.628 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@loginRequest_PhoneNumber='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[PhoneNumber] = @loginRequest_PhoneNumber
+2026-06-08 15:34:07.683 +03:00 [INF] Executing ObjectResult, writing value of type 'QCardPayment.dto.LoginResponse'.
+2026-06-08 15:34:07.684 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.LoginAsync (QCardPayment) in 118.2008ms
+2026-06-08 15:34:07.684 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:34:07.684 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/Login - 200 null application/json; charset=utf-8 121.1977ms
+2026-06-08 15:34:28.542 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:34:28.543 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 0.8057ms
+2026-06-08 15:34:28.587 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:34:28.588 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 0.8131ms
+2026-06-08 15:34:28.678 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:34:28.690 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.1349ms
+2026-06-08 15:34:32.405 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:34:32.406 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 0.5937ms
+2026-06-08 15:34:32.434 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:34:32.434 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 0.4832ms
+2026-06-08 15:34:32.520 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:34:32.525 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.1538ms
+2026-06-08 15:35:49.648 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:35:49.649 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 1.2127ms
+2026-06-08 15:35:49.698 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:35:49.699 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 0.5209ms
+2026-06-08 15:35:49.948 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:35:49.960 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.8117ms
+2026-06-08 15:36:03.079 +03:00 [INF] Server desktop-jt59vo4:10092:b93ae473 caught stopping signal...
+2026-06-08 15:36:03.082 +03:00 [INF] Application is shutting down...
+2026-06-08 15:36:03.606 +03:00 [INF] Server desktop-jt59vo4:10092:b93ae473 caught stopped signal...
+2026-06-08 15:36:03.622 +03:00 [INF] Server desktop-jt59vo4:10092:b93ae473 All dispatchers stopped
+2026-06-08 15:36:03.626 +03:00 [INF] Server desktop-jt59vo4:10092:b93ae473 successfully reported itself as stopped in 2.4808 ms
+2026-06-08 15:36:03.626 +03:00 [INF] Server desktop-jt59vo4:10092:b93ae473 has been stopped in total 544.4382 ms
+2026-06-08 15:36:30.845 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-08 15:36:31.345 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-08 15:36:31.489 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:36:31.556 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-08 15:36:31.597 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-08 15:36:31.608 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-08 15:36:31.609 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-08 15:36:31.609 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-08 15:36:31.625 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:36:31.625 +03:00 [INF] Hosting environment: Development
+2026-06-08 15:36:31.625 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-08 15:36:31.744 +03:00 [INF] Server desktop-jt59vo4:22928:50dff890 successfully announced in 119.0973 ms
+2026-06-08 15:36:31.747 +03:00 [INF] Server desktop-jt59vo4:22928:50dff890 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-08 15:36:31.765 +03:00 [INF] Server desktop-jt59vo4:22928:50dff890 all the dispatchers started
+2026-06-08 15:36:33.744 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:36:33.835 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 91.0012ms
+2026-06-08 15:36:33.854 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:36:33.857 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 2.9097ms
+2026-06-08 15:36:33.929 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:36:34.016 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.4626ms
+2026-06-08 15:36:42.338 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/Login - application/json 91
+2026-06-08 15:36:42.342 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-06-08 15:36:42.370 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:36:42.391 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[QCardPayment.dto.LoginResponse] LoginAsync(QCardPayment.dto.LoginRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:36:43.348 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@loginRequest_PhoneNumber='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[PhoneNumber] = @loginRequest_PhoneNumber
+2026-06-08 15:36:43.426 +03:00 [INF] Executing ObjectResult, writing value of type 'QCardPayment.dto.LoginResponse'.
+2026-06-08 15:36:43.433 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.LoginAsync (QCardPayment) in 1039.1702ms
+2026-06-08 15:36:43.434 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:36:43.440 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/Login - 200 null application/json; charset=utf-8 1101.8598ms
+2026-06-08 15:39:11.350 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/Login - application/json 91
+2026-06-08 15:39:11.354 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:39:11.355 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[QCardPayment.dto.LoginResponse] LoginAsync(QCardPayment.dto.LoginRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:39:11.438 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@loginRequest_PhoneNumber='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[PhoneNumber] = @loginRequest_PhoneNumber
+2026-06-08 15:39:11.440 +03:00 [INF] Executing ObjectResult, writing value of type 'QCardPayment.dto.LoginResponse'.
+2026-06-08 15:39:11.440 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.LoginAsync (QCardPayment) in 84.5331ms
+2026-06-08 15:39:11.440 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:39:11.441 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/Login - 200 null application/json; charset=utf-8 90.1233ms
+2026-06-08 15:40:17.633 +03:00 [INF] Server desktop-jt59vo4:22928:50dff890 caught stopping signal...
+2026-06-08 15:40:17.634 +03:00 [INF] Application is shutting down...
+2026-06-08 15:40:17.637 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:40:17.641 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 3.6649ms
+2026-06-08 15:40:18.166 +03:00 [INF] Server desktop-jt59vo4:22928:50dff890 caught stopped signal...
+2026-06-08 15:40:18.610 +03:00 [INF] Server desktop-jt59vo4:22928:50dff890 All dispatchers stopped
+2026-06-08 15:40:18.617 +03:00 [INF] Server desktop-jt59vo4:22928:50dff890 successfully reported itself as stopped in 5.0554 ms
+2026-06-08 15:40:18.617 +03:00 [INF] Server desktop-jt59vo4:22928:50dff890 has been stopped in total 983.529 ms
+2026-06-08 15:40:30.416 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-08 15:40:31.526 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-08 15:40:31.670 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:40:31.730 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-08 15:40:31.775 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-08 15:40:31.785 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-08 15:40:31.785 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-08 15:40:31.786 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-08 15:40:31.801 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:40:31.801 +03:00 [INF] Hosting environment: Development
+2026-06-08 15:40:31.802 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-08 15:40:31.927 +03:00 [INF] Server desktop-jt59vo4:26572:a0c2d9f8 successfully announced in 124.9099 ms
+2026-06-08 15:40:31.930 +03:00 [INF] Server desktop-jt59vo4:26572:a0c2d9f8 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-08 15:40:31.949 +03:00 [INF] Server desktop-jt59vo4:26572:a0c2d9f8 all the dispatchers started
+2026-06-08 15:40:36.918 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:40:37.076 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 157.6687ms
+2026-06-08 15:40:37.103 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:40:37.107 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 5.3729ms
+2026-06-08 15:40:37.195 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:40:37.312 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.1567ms
+2026-06-08 15:40:44.839 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/Login - application/json 91
+2026-06-08 15:40:44.845 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-06-08 15:40:44.896 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:40:44.931 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[QCardPayment.dto.LoginResponse] LoginAsync(QCardPayment.dto.LoginRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:40:46.429 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@loginRequest_PhoneNumber='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[PhoneNumber] = @loginRequest_PhoneNumber
+2026-06-08 15:40:46.661 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-06-08 15:40:46.798 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+OUTPUT 1
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+2026-06-08 15:40:46.822 +03:00 [INF] Executing ObjectResult, writing value of type 'QCardPayment.dto.LoginResponse'.
+2026-06-08 15:40:46.835 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.LoginAsync (QCardPayment) in 1899.8667ms
+2026-06-08 15:40:46.836 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:40:46.847 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/Login - 200 null application/json; charset=utf-8 2008.2801ms
+2026-06-08 15:41:02.931 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/register - application/json 91
+2026-06-08 15:41:02.933 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-08 15:41:02.945 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(QCardPayment.dto.RegisterRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:41:03.069 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-06-08 15:41:03.072 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-06-08 15:41:03.072 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.Register (QCardPayment) in 127.1364ms
+2026-06-08 15:41:03.072 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-08 15:41:03.072 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/register - 200 null text/plain; charset=utf-8 141.4106ms
+2026-06-08 15:41:08.214 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/Login - application/json 91
+2026-06-08 15:41:08.220 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:41:08.221 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[QCardPayment.dto.LoginResponse] LoginAsync(QCardPayment.dto.LoginRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:41:08.267 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@loginRequest_PhoneNumber='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[PhoneNumber] = @loginRequest_PhoneNumber
+2026-06-08 15:41:08.345 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-06-08 15:41:08.351 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+OUTPUT 1
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+2026-06-08 15:41:08.352 +03:00 [INF] Executing ObjectResult, writing value of type 'QCardPayment.dto.LoginResponse'.
+2026-06-08 15:41:08.352 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.LoginAsync (QCardPayment) in 131.1892ms
+2026-06-08 15:41:08.352 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:41:08.352 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/Login - 200 null application/json; charset=utf-8 138.1772ms
+2026-06-08 15:46:27.100 +03:00 [INF] Server desktop-jt59vo4:26572:a0c2d9f8 caught stopping signal...
+2026-06-08 15:46:27.103 +03:00 [INF] Application is shutting down...
+2026-06-08 15:46:27.626 +03:00 [INF] Server desktop-jt59vo4:26572:a0c2d9f8 caught stopped signal...
+2026-06-08 15:46:27.816 +03:00 [INF] Server desktop-jt59vo4:26572:a0c2d9f8 All dispatchers stopped
+2026-06-08 15:46:27.824 +03:00 [INF] Server desktop-jt59vo4:26572:a0c2d9f8 successfully reported itself as stopped in 5.8605 ms
+2026-06-08 15:46:27.824 +03:00 [INF] Server desktop-jt59vo4:26572:a0c2d9f8 has been stopped in total 722.4037 ms
+2026-06-08 15:46:51.963 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-08 15:46:53.105 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-08 15:46:53.371 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:46:53.447 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-08 15:46:53.507 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-08 15:46:53.522 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-08 15:46:53.523 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-08 15:46:53.523 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-08 15:46:53.551 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:46:53.551 +03:00 [INF] Hosting environment: Development
+2026-06-08 15:46:53.552 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-08 15:46:53.745 +03:00 [INF] Server desktop-jt59vo4:4008:cab2b50d successfully announced in 194.6381 ms
+2026-06-08 15:46:53.750 +03:00 [INF] Server desktop-jt59vo4:4008:cab2b50d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-08 15:46:53.776 +03:00 [INF] Server desktop-jt59vo4:4008:cab2b50d all the dispatchers started
+2026-06-08 15:47:36.461 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/register - application/json 91
+2026-06-08 15:47:36.583 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-06-08 15:47:36.667 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-08 15:47:36.733 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(QCardPayment.dto.RegisterRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:47:40.671 +03:00 [INF] Executed DbCommand (68ms) [Parameters=[@registerRequest_PhoneNumber='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[PhoneNumber] = @registerRequest_PhoneNumber
+2026-06-08 15:47:40.951 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.Register (QCardPayment) in 4206.1147ms
+2026-06-08 15:47:40.954 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-08 15:47:40.961 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: user already exist !
+   at QCardPayment.Controller.AuthController.Register(RegisterRequest registerRequest) in C:\Users\user\QCardPayment\Controller\AuthController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-08 15:47:41.071 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/register - 500 null text/plain; charset=utf-8 4612.9146ms
+2026-06-08 15:50:22.398 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/Login - application/json 91
+2026-06-08 15:50:22.405 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:50:22.422 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[QCardPayment.dto.LoginResponse] LoginAsync(QCardPayment.dto.LoginRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-08 15:50:22.614 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@loginRequest_PhoneNumber='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[PhoneNumber] = @loginRequest_PhoneNumber
+2026-06-08 15:50:23.015 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-06-08 15:50:23.102 +03:00 [INF] Executing ObjectResult, writing value of type 'QCardPayment.dto.LoginResponse'.
+2026-06-08 15:50:23.115 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.LoginAsync (QCardPayment) in 692.5908ms
+2026-06-08 15:50:23.115 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-08 15:50:23.116 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/Login - 200 null application/json; charset=utf-8 719.2924ms
+2026-06-08 15:50:57.197 +03:00 [INF] Server desktop-jt59vo4:4008:cab2b50d caught stopping signal...
+2026-06-08 15:50:57.199 +03:00 [INF] Application is shutting down...
+2026-06-08 15:50:57.496 +03:00 [INF] Server desktop-jt59vo4:4008:cab2b50d All dispatchers stopped
+2026-06-08 15:50:57.539 +03:00 [INF] Server desktop-jt59vo4:4008:cab2b50d successfully reported itself as stopped in 36.7741 ms
+2026-06-08 15:50:57.540 +03:00 [INF] Server desktop-jt59vo4:4008:cab2b50d has been stopped in total 341.6573 ms
+2026-06-08 15:51:20.201 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-08 15:51:21.246 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-08 15:51:21.632 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:51:21.830 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-08 15:51:21.950 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-08 15:51:21.971 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-08 15:51:21.971 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-08 15:51:21.972 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-08 15:51:22.000 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:51:22.000 +03:00 [INF] Hosting environment: Development
+2026-06-08 15:51:22.000 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-08 15:51:22.242 +03:00 [INF] Server desktop-jt59vo4:21180:b46220c2 successfully announced in 240.6427 ms
+2026-06-08 15:51:22.248 +03:00 [INF] Server desktop-jt59vo4:21180:b46220c2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-08 15:51:22.296 +03:00 [INF] Server desktop-jt59vo4:21180:b46220c2 all the dispatchers started
+2026-06-08 15:51:22.843 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-08 15:51:23.208 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 355.5569ms
+2026-06-08 15:51:23.436 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 15:51:23.443 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 10.5282ms
+2026-06-08 15:51:23.680 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-08 15:51:23.975 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 295.4482ms
+2026-06-08 15:51:30.773 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/api/Orders - null null
+2026-06-08 15:51:30.800 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-06-08 15:51:30.943 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-08 15:51:30.962 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-08 15:51:30.963 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/api/Orders - 401 0 null 190.0061ms
+2026-06-08 15:51:41.829 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/api/Orders - null null
+2026-06-08 15:51:42.162 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.OrdersController.GetAll (QCardPayment)'
+2026-06-08 15:51:42.246 +03:00 [INF] Route matched with {action = "GetAll", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller QCardPayment.Controller.OrdersController (QCardPayment).
+2026-06-08 15:51:47.052 +03:00 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[Status], [o].[TotalAmount], [o].[UserId], [p].[Id], [p].[Amount], [p].[FormUrl], [p].[OrderId], [p].[PaymentId], [p].[RequestId], [p].[Status]
+FROM [Orders] AS [o]
+LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+ORDER BY [o].[Id]
+2026-06-08 15:51:47.365 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[QCardPayment.Models.Orders, QCardPayment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-08 15:51:47.433 +03:00 [INF] Executed action QCardPayment.Controller.OrdersController.GetAll (QCardPayment) in 5175.2391ms
+2026-06-08 15:51:47.434 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.OrdersController.GetAll (QCardPayment)'
+2026-06-08 15:51:47.456 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/api/Orders - 200 null application/json; charset=utf-8 5627.6248ms
+2026-06-08 15:52:05.859 +03:00 [INF] Server desktop-jt59vo4:21180:b46220c2 caught stopping signal...
+2026-06-08 15:52:05.868 +03:00 [INF] Application is shutting down...
+2026-06-08 15:52:06.429 +03:00 [INF] Server desktop-jt59vo4:21180:b46220c2 caught stopped signal...
+2026-06-08 15:52:06.568 +03:00 [INF] Server desktop-jt59vo4:21180:b46220c2 All dispatchers stopped
+2026-06-08 15:52:06.586 +03:00 [INF] Server desktop-jt59vo4:21180:b46220c2 successfully reported itself as stopped in 12.4201 ms
+2026-06-08 15:52:06.586 +03:00 [INF] Server desktop-jt59vo4:21180:b46220c2 has been stopped in total 720.7661 ms

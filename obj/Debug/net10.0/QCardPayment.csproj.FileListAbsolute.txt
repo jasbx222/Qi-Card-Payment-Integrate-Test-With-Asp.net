@@ -193,3 +193,4 @@ C:\Users\user\QCardPayment\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.D
 C:\Users\user\QCardPayment\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\user\QCardPayment\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\user\QCardPayment\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\user\QCardPayment\obj\Debug\net10.0\QCardPayment.sourcelink.json

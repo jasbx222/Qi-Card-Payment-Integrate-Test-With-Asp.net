@@ -12,6 +12,7 @@ using QCardPayment.DataBase;
 using QCardPayment.Service;
 using QCardPayment.Repositories;
 using QCardPayment.Repositories.Interfaces;
+using QCardPayment.Models;
 
 // using Delivery_Management_System.DataBase;
 
@@ -93,6 +94,8 @@ builder.Services.AddHttpClient("QiCard", client =>
 builder.Services.AddScoped<QiCardService>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+
+builder.Services.AddScoped<TokenService>(); 
 //====================Cashing //==============
 builder.Services.AddStackExchangeRedisCache(options =>
 {
@@ -100,9 +103,9 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.InstanceName = builder.Configuration.GetSection("redis:InstanceName").Value;
 });
 // ================= Identity =================
-// builder.Services.AddIdentity<AppUser, IdentityRole>()
-//     .AddEntityFrameworkStores<DataContext>()
-//     .AddDefaultTokenProviders();
+builder.Services.AddIdentity<AppUser, IdentityRole>()
+    .AddEntityFrameworkStores<DataContext>()
+    .AddDefaultTokenProviders();
 
 // ================= JWT Authentication =================
 builder.Services.AddAuthentication(options =>

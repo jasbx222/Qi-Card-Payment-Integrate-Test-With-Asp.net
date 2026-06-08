@@ -3,11 +3,13 @@ using QCardPayment.Models;
 using QCardPayment.Repositories.Interfaces;
 using QCardPayment.dto;
 using QCardPayment.Service;
+using Microsoft.AspNetCore.Authorization;
 
 namespace QCardPayment.Controller;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class PaymentsController : ControllerBase
 {
     private readonly IPaymentRepository _paymentRepository;

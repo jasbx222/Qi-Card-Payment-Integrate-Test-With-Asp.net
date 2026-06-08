@@ -1,4 +1,5 @@
 // using MovieRatingAPI.Data;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using QCardPayment.Models;
 
@@ -7,7 +8,7 @@ namespace QCardPayment.DataBase
     /// <summary>
     /// Provides the Entity Framework Core database context for the delivery system.
     /// </summary>
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<AppUser>
     {
         public DataContext(DbContextOptions<DataContext> options)
             : base(options)

@@ -2,11 +2,14 @@ using Microsoft.AspNetCore.Mvc;
 using QCardPayment.Models;
 using QCardPayment.Repositories.Interfaces;
 using QCardPayment.dto;
+using Microsoft.AspNetCore.Authorization;
 
 namespace QCardPayment.Controller;
 
 [ApiController]
 [Route("api/[controller]")]
+
+[Authorize]
 public class OrdersController : ControllerBase
 {
     private readonly IOrderRepository _orderRepository;
