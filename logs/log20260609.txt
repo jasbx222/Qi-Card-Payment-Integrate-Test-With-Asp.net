@@ -1,0 +1,229 @@
+2026-06-09 13:46:20.921 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-09 13:46:24.462 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-09 13:46:30.349 +03:00 [ERR] Failed executing DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-06-09 13:46:30.432 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'QCardPayment.DataBase.DataContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:f6a6c4a7-ad54-4591-921d-942e82403eb9
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:f6a6c4a7-ad54-4591-921d-942e82403eb9
+Error Number:208,State:1,Class:16
+2026-06-09 13:48:50.632 +03:00 [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-09 13:48:50.767 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-06-09 13:48:50.840 +03:00 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-06-09 13:48:51.094 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-06-09 13:48:51.127 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-09 13:48:51.135 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-09 13:48:51.171 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-06-09 13:48:51.199 +03:00 [INF] Applying migration '20260609104804_AddProductsAndOrderItems'.
+2026-06-09 13:48:51.597 +03:00 [INF] Executed DbCommand (274ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var nvarchar(max);
+SELECT @var = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Orders]') AND [c].[name] = N'UserId');
+IF @var IS NOT NULL EXEC(N'ALTER TABLE [Orders] DROP CONSTRAINT ' + @var + ';');
+ALTER TABLE [Orders] ALTER COLUMN [UserId] nvarchar(450) NOT NULL;
+2026-06-09 13:48:51.625 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(200) NOT NULL,
+    [Description] nvarchar(1000) NOT NULL,
+    [Price] decimal(18,2) NOT NULL,
+    [IsActive] bit NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id])
+);
+2026-06-09 13:48:51.642 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [OrderItems] (
+    [Id] int NOT NULL IDENTITY,
+    [OrderId] int NOT NULL,
+    [ProductId] int NOT NULL,
+    [Quantity] int NOT NULL,
+    [UnitPrice] decimal(18,2) NOT NULL,
+    CONSTRAINT [PK_OrderItems] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_OrderItems_Orders_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [Orders] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_OrderItems_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE NO ACTION
+);
+2026-06-09 13:48:51.650 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_OrderItems_OrderId] ON [OrderItems] ([OrderId]);
+2026-06-09 13:48:51.659 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_OrderItems_ProductId] ON [OrderItems] ([ProductId]);
+2026-06-09 13:48:51.691 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260609104804_AddProductsAndOrderItems', N'10.0.8');
+2026-06-09 13:48:51.703 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-06-09 13:50:28.369 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-06-09 13:50:29.563 +03:00 [INF] Hangfire SQL objects installed.
+2026-06-09 13:50:32.739 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-09 13:50:32.766 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-06-09 13:50:32.816 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-06-09 13:50:33.025 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-06-09 13:50:33.080 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-09 13:50:33.083 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-09 13:50:33.100 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-06-09 13:50:33.135 +03:00 [INF] No migrations were applied. The database is already up to date.
+2026-06-09 13:50:33.143 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-06-09 13:50:33.905 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-06-09 13:50:34.314 +03:00 [INF] Executed DbCommand (70ms) [Parameters=[@p0='?' (Size = 1000), @p1='?' (DbType = Boolean), @p2='?' (Size = 200), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (Size = 1000), @p5='?' (DbType = Boolean), @p6='?' (Size = 200), @p7='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p8='?' (Size = 1000), @p9='?' (DbType = Boolean), @p10='?' (Size = 200), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [Products] USING (
+VALUES (@p0, @p1, @p2, @p3, 0),
+(@p4, @p5, @p6, @p7, 1),
+(@p8, @p9, @p10, @p11, 2)) AS i ([Description], [IsActive], [Name], [Price], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Description], [IsActive], [Name], [Price])
+VALUES (i.[Description], i.[IsActive], i.[Name], i.[Price])
+OUTPUT INSERTED.[Id], i._Position;
+2026-06-09 13:50:34.387 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-09 13:50:34.656 +03:00 [WRN] The WebRootPath was not found: C:\Users\user\QCardPayment\wwwroot. Static files may be unavailable.
+2026-06-09 13:50:34.733 +03:00 [INF] Now listening on: http://localhost:5229
+2026-06-09 13:50:34.754 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@QCard'
+2026-06-09 13:50:34.755 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-09 13:50:34.755 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-09 13:50:34.786 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-09 13:50:34.787 +03:00 [INF] Hosting environment: Development
+2026-06-09 13:50:34.787 +03:00 [INF] Content root path: C:\Users\user\QCardPayment
+2026-06-09 13:50:35.076 +03:00 [INF] Server desktop-jt59vo4:14796:2edb25ec successfully announced in 288.9957 ms
+2026-06-09 13:50:35.086 +03:00 [INF] Server desktop-jt59vo4:14796:2edb25ec is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-09 13:50:35.108 +03:00 [INF] Server desktop-jt59vo4:14796:2edb25ec all the dispatchers started
+2026-06-09 13:50:35.742 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2026-06-09 13:50:36.099 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 355.7372ms
+2026-06-09 13:50:36.174 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-09 13:50:36.179 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 14901 application/javascript; charset=utf-8 5.5814ms
+2026-06-09 13:50:36.768 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2026-06-09 13:50:37.045 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 276.9831ms
+2026-06-09 13:50:44.854 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/api/Orders - null null
+2026-06-09 13:50:44.861 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-06-09 13:50:45.095 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '6/8/2026 1:50:23 PM', Current time (UTC): '6/9/2026 10:50:45 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-09 13:50:45.125 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '6/8/2026 1:50:23 PM', Current time (UTC): '6/9/2026 10:50:45 AM'.
+2026-06-09 13:50:45.140 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-09 13:50:45.149 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-09 13:50:45.149 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/api/Orders - 401 0 null 295.8355ms
+2026-06-09 13:51:10.156 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/register - application/json 87
+2026-06-09 13:51:10.192 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-09 13:51:10.292 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(QCardPayment.dto.RegisterRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-09 13:51:11.058 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@registerRequest_PhoneNumber='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[PhoneNumber] = @registerRequest_PhoneNumber
+2026-06-09 13:51:11.341 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-06-09 13:51:11.511 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2026-06-09 13:51:11.535 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-06-09 13:51:11.560 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.Register (QCardPayment) in 1246.5905ms
+2026-06-09 13:51:11.562 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.Register (QCardPayment)'
+2026-06-09 13:51:11.592 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/register - 200 null text/plain; charset=utf-8 1436.2404ms
+2026-06-09 13:51:22.640 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5229/Login - application/json 87
+2026-06-09 13:51:22.648 +03:00 [INF] Executing endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-09 13:51:22.689 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[QCardPayment.dto.LoginResponse] LoginAsync(QCardPayment.dto.LoginRequest) on controller QCardPayment.Controller.AuthController (QCardPayment).
+2026-06-09 13:51:23.098 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@loginRequest_PhoneNumber='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[PhoneNumber] = @loginRequest_PhoneNumber
+2026-06-09 13:51:23.525 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-06-09 13:51:23.600 +03:00 [INF] Executing ObjectResult, writing value of type 'QCardPayment.dto.LoginResponse'.
+2026-06-09 13:51:23.629 +03:00 [INF] Executed action QCardPayment.Controller.AuthController.LoginAsync (QCardPayment) in 939.68ms
+2026-06-09 13:51:23.629 +03:00 [INF] Executed endpoint 'QCardPayment.Controller.AuthController.LoginAsync (QCardPayment)'
+2026-06-09 13:51:23.631 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5229/Login - 200 null application/json; charset=utf-8 990.5492ms
+2026-06-09 13:52:05.471 +03:00 [INF] Server desktop-jt59vo4:14796:2edb25ec caught stopping signal...
+2026-06-09 13:52:05.482 +03:00 [INF] Application is shutting down...
+2026-06-09 13:52:05.929 +03:00 [INF] Server desktop-jt59vo4:14796:2edb25ec All dispatchers stopped
+2026-06-09 13:52:05.944 +03:00 [INF] Server desktop-jt59vo4:14796:2edb25ec successfully reported itself as stopped in 11.2105 ms
+2026-06-09 13:52:05.944 +03:00 [INF] Server desktop-jt59vo4:14796:2edb25ec has been stopped in total 464.1052 ms

@@ -172,9 +172,12 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// ── تهيئة بيانات تجريبية (منتجات) عند التشغيل ──
+// ── تطبيق Migrations وتهيئة بيانات تجريبية عند التشغيل ──
 using (var scope = app.Services.CreateScope())
 {
+    var db = scope.ServiceProvider.GetRequiredService<DataContext>();
+    await db.Database.MigrateAsync();
+
     var productRepo = scope.ServiceProvider.GetRequiredService<IProductRepository>();
     await productRepo.SeedDemoProductsAsync();
 }
