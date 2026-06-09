@@ -2,7 +2,7 @@ namespace QCardPayment.dto;
 
 public class CreateOrderRequest
 {
-    public int UserId { get; set; }
+    public string UserId { get; set; } = string.Empty;
     public decimal TotalAmount { get; set; }
     public string Status { get; set; } = string.Empty;
 }

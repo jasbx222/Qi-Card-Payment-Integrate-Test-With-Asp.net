@@ -54,6 +54,20 @@ public class PaymentRepository : IPaymentRepository
             .ToListAsync();
     }
 
+    public async Task<Payments?> GetByRequestIdAsync(string requestId)
+    {
+        return await _db.Payments
+            .Include(p => p.Order)
+            .FirstOrDefaultAsync(p => p.RequestId == requestId);
+    }
+
+    public async Task<Payments?> GetByQiCardPaymentIdAsync(string paymentId)
+    {
+        return await _db.Payments
+            .Include(p => p.Order)
+            .FirstOrDefaultAsync(p => p.PaymentId == paymentId);
+    }
+
     public async Task<Payments?> UpdateAsync(Payments payment)
     {
         var existingPayment = await _db.Payments.FindAsync(payment.Id);

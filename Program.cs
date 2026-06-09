@@ -13,6 +13,7 @@ using QCardPayment.Service;
 using QCardPayment.Repositories;
 using QCardPayment.Repositories.Interfaces;
 using QCardPayment.Models;
+using QCardPayment.Integration.QiCard;
 
 // using Delivery_Management_System.DataBase;
 
@@ -44,7 +45,7 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "Delivery Management System API",
+        Title = "Qi Card Payment Integration API",
         Version = "v1"
     });
 
@@ -82,18 +83,13 @@ builder.Services.AddDbContext<DataContext>(options =>
 //==================scoped services =================
 // builder.Services.AddScoped<ICustomer, CustomerRepository>();
 //==================scoped services =================
-builder.Services.AddHttpClient("QiCard", client =>
-{
-    var baseUrl = builder.Configuration["QiCard:BaseUrl"] ?? builder.Configuration["BaseUrl"];
-    if (!string.IsNullOrWhiteSpace(baseUrl))
-    {
-        client.BaseAddress = new Uri(baseUrl);
-    }
-});
+// ── وحدة Qi Card القابلة لإعادة الاستخدام ──
+builder.Services.AddQiCardPayment(builder.Configuration);
 
-builder.Services.AddScoped<QiCardService>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IPaymentFlowService, PaymentFlowService>();
 
 builder.Services.AddScoped<TokenService>(); 
 //====================Cashing //==============
@@ -162,7 +158,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Delivery Management System API v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Qi Card Payment API v1");
             c.EnablePersistAuthorization();
     });
 }
@@ -176,5 +172,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// ── تهيئة بيانات تجريبية (منتجات) عند التشغيل ──
+using (var scope = app.Services.CreateScope())
+{
+    var productRepo = scope.ServiceProvider.GetRequiredService<IProductRepository>();
+    await productRepo.SeedDemoProductsAsync();
+}
 
 app.Run();

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QCardPayment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fabf66a2d400657301be1d584fb84d45b9aab0ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45030a12166d1cec430378002dca541e8bd174d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("QCardPayment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QCardPayment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

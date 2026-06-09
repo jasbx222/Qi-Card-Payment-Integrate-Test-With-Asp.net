@@ -35,6 +35,7 @@ public class OrderRepository : IOrderRepository
     public async Task<IEnumerable<Orders>> GetAllAsync()
     {
         return await _db.Orders
+            .Include(o => o.Items)
             .Include(o => o.Payments)
             .ToListAsync();
     }
@@ -42,8 +43,19 @@ public class OrderRepository : IOrderRepository
     public async Task<Orders?> GetByIdAsync(int id)
     {
         return await _db.Orders
+            .Include(o => o.Items)
+            .ThenInclude(i => i.Product)
             .Include(o => o.Payments)
             .FirstOrDefaultAsync(o => o.Id == id);
+    }
+
+    public async Task<Orders?> GetByIdForUserAsync(int id, string userId)
+    {
+        return await _db.Orders
+            .Include(o => o.Items)
+            .ThenInclude(i => i.Product)
+            .Include(o => o.Payments)
+            .FirstOrDefaultAsync(o => o.Id == id && o.UserId == userId);
     }
 
     public async Task<Orders?> UpdateAsync(Orders order)

@@ -10,4 +10,6 @@ public interface IPaymentRepository
     Task<Payments?> UpdateAsync(Payments payment);
     Task<bool> DeleteAsync(int id);
     Task<IEnumerable<Payments>> GetByOrderIdAsync(int orderId);
+    Task<Payments?> GetByRequestIdAsync(string requestId);
+    Task<Payments?> GetByQiCardPaymentIdAsync(string paymentId);
 }

@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using QCardPayment.Models;
 using QCardPayment.Repositories.Interfaces;
 using QCardPayment.dto;
+using QCardPayment.Integration.QiCard;
+using QCardPayment.Integration.QiCard.Dtos;
 using QCardPayment.Service;
 using Microsoft.AspNetCore.Authorization;
 
@@ -14,12 +16,12 @@ public class PaymentsController : ControllerBase
 {
     private readonly IPaymentRepository _paymentRepository;
     private readonly IOrderRepository _orderRepository;
-    private readonly QiCardService _qiCardService;
+    private readonly IQiCardService _qiCardService;
 
     public PaymentsController(
         IPaymentRepository paymentRepository,
         IOrderRepository orderRepository,
-        QiCardService qiCardService)
+        IQiCardService qiCardService)
     {
         _paymentRepository = paymentRepository;
         _orderRepository = orderRepository;
@@ -113,14 +115,28 @@ public class PaymentsController : ControllerBase
         return NoContent();
     }
 
+    /// <summary>
+    /// إنشاء دفع مباشر عند Qi Card (بدون طلب) - للاختبار فقط
+    /// في الإنتاج استخدم POST /api/checkout
+    /// </summary>
     [HttpPost("external")]
-    public async Task<IActionResult> CreateExternal([FromBody] CreatePaymentRequest request)
+    public async Task<IActionResult> CreateExternal([FromBody] QiCardCreatePaymentRequest request, CancellationToken ct)
     {
         if (request is null)
             return BadRequest();
 
-
-        var response = await _qiCardService.CreatePaymentAsync(request);
+        var response = await _qiCardService.CreatePaymentAsync(request, ct);
         return Ok(response);
+    }
+
+    /// <summary>مزامنة حالة دفع محلي مع Qi Card</summary>
+    [HttpPost("{id}/sync")]
+    public async Task<IActionResult> SyncStatus(int id, [FromServices] IPaymentFlowService flowService, CancellationToken ct)
+    {
+        var payment = await flowService.SyncPaymentStatusAsync(id, ct);
+        if (payment is null)
+            return NotFound();
+
+        return Ok(payment);
     }
 }

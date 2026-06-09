@@ -1,6 +1,56 @@
-@QCardPayment_HostAddress = http://localhost:5229
+@host = http://localhost:5229
+@token = ضع_التوكن_هنا_بعد_الدخول
 
-GET {{QCardPayment_HostAddress}}/weatherforecast/
-Accept: application/json
+### 1) تسجيل عميل جديد
+POST {{host}}/register
+Content-Type: application/json
 
-###
+{
+  "username": "ahmed",
+  "phoneNumber": "07701234567",
+  "password": "123456"
+}
+
+### 2) تسجيل الدخول
+# @name login
+POST {{host}}/Login
+Content-Type: application/json
+
+{
+  "phoneNumber": "07701234567",
+  "password": "123456"
+}
+
+### 3) عرض المنتجات
+GET {{host}}/api/products
+
+### 4) إتمام الشراء وبدء الدفع
+POST {{host}}/api/checkout
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "items": [
+    { "productId": 1, "quantity": 1 },
+    { "productId": 2, "quantity": 1 }
+  ]
+}
+
+### 5) التحقق من نتيجة الدفع
+GET {{host}}/api/checkout/finish?orderId=1
+
+### 6) مزامنة حالة دفع
+POST {{host}}/api/qicard/sync/1
+Authorization: Bearer {{token}}
+
+### 7) محاكاة Webhook يدوياً
+POST {{host}}/api/qicard/webhook
+Content-Type: application/json
+
+{
+  "requestId": "REQUEST_ID",
+  "paymentId": "PAYMENT_ID",
+  "status": "SUCCESS",
+  "amount": 395000,
+  "currency": "IQD"
+}

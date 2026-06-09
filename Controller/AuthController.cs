@@ -1,19 +1,20 @@
-
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using QCardPayment.DataBase;
 using QCardPayment.dto;
 using QCardPayment.Models;
 using QCardPayment.Service;
-using Serilog;
 
 namespace QCardPayment.Controller;
 
+
+/// <summary>
+/// المصادقة: تسجيل حساب جديد وتسجيل الدخول
+/// الخطوة الأولى في سيناريو الشراء - يُرجع JWT للاستخدام في باقي الطلبات
+/// </summary>
 [ApiController]
 [Route("/auth")]
-
-public class AuthController :ControllerBase
+public class AuthController : ControllerBase
 {
     
     private readonly TokenService _tokenService;
@@ -27,8 +28,8 @@ _userManager = userManager;
     }
 
 
+    /// <summary>تسجيل عميل جديد</summary>
     [HttpPost("/register")]
-
     public async Task<IActionResult> Register(RegisterRequest registerRequest)
     {
        var user = await _userManager.Users.FirstOrDefaultAsync(x=>x.PhoneNumber == registerRequest.PhoneNumber);
@@ -52,10 +53,9 @@ _userManager = userManager;
     }
 
 
+    /// <summary>تسجيل الدخول - يُرجع Token للتفويض في Header: Bearer {token}</summary>
     [HttpPost("/Login")]
-
-
-public async Task<LoginResponse> LoginAsync(LoginRequest loginRequest)
+    public async Task<LoginResponse> LoginAsync(LoginRequest loginRequest)
 {
     var user = await _userManager.Users
         .FirstOrDefaultAsync(x => x.PhoneNumber == loginRequest.PhoneNumber);
