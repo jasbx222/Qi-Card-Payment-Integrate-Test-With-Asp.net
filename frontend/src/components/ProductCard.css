@@ -1,0 +1,178 @@
+.loot-card {
+  position: relative;
+  background: var(--panel-glass);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-holo);
+  overflow: hidden;
+  transition: transform 0.35s var(--ease-orbit), box-shadow 0.35s, border-color 0.3s;
+}
+.loot-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--holo-border);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.35), 0 0 32px rgba(34, 211, 238, 0.12);
+}
+
+.loot-card__scanline {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 48%, rgba(34,211,238,0.03) 50%, transparent 52%);
+  background-size: 100% 8px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+.loot-card:hover .loot-card__scanline { opacity: 1; }
+
+.loot-card__display {
+  position: relative;
+  display: block;
+  padding: 1rem 1rem 0;
+}
+.loot-card__display .badge-loot {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 3;
+}
+.loot-card__wish {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 4;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.loot-card__wish:hover,
+.loot-card__wish.active {
+  color: var(--orbit-magenta);
+  border-color: var(--orbit-magenta);
+  background: rgba(236, 72, 153, 0.15);
+}
+.loot-card__discount {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1.25rem;
+  top: auto;
+  z-index: 5;
+  background: var(--orbit-magenta);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.loot-card__holo-frame {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(145deg, rgba(34,211,238,0.06), rgba(167,139,250,0.06));
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.loot-card__holo-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+.loot-card__holo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease-orbit);
+}
+.loot-card:hover .loot-card__holo-frame img { transform: scale(1.06); }
+
+.loot-card__data { padding: 1rem 1.15rem 1.15rem; }
+
+.loot-card__data h3 {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.loot-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+}
+.loot-card__rating { color: var(--orbit-gold); }
+.loot-card__stock { color: var(--warning); margin-right: auto; }
+
+.loot-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.loot-card__price-main {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--orbit-cyan);
+}
+.loot-card__price-old {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.loot-card__collect {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--orbit-cyan), var(--orbit-violet));
+  color: var(--void);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.loot-card__collect:hover:not(:disabled) {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
+}
+.loot-card__collect:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.loot-card--spotlight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.loot-card--spotlight .loot-card__display { padding: 1.5rem; }
+.loot-card--spotlight .loot-card__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.loot-card--spotlight .loot-card__data h3 { font-size: 1.25rem; }
+
+@media (max-width: 600px) {
+  .loot-card--spotlight { grid-template-columns: 1fr; }
+}

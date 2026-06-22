@@ -1,0 +1,19 @@
+.page-hero {
+  position: relative;
+  padding: var(--space-16) 0 var(--space-10);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+.page-hero__glow {
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(ellipse, rgba(34, 211, 238, 0.08), transparent 70%);
+  pointer-events: none;
+}
+.page-hero__inner {
+  position: relative;
+  max-width: 680px;
+}

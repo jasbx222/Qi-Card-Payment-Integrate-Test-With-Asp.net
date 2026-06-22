@@ -1,0 +1,106 @@
+.catalog-universe { padding-bottom: 4rem; }
+
+.catalog-hero {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 2rem;
+}
+.catalog-hero__inner { max-width: 640px; }
+
+.catalog-body { position: relative; }
+
+.catalog-filters-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.85rem;
+  margin-bottom: 1rem;
+  background: var(--panel-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-holo);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.catalog-radar {
+  padding: 1.5rem;
+  position: sticky;
+  top: calc(var(--nav-h) + 1rem);
+}
+.catalog-radar__title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  color: var(--orbit-cyan);
+}
+.catalog-radar__section {
+  margin-bottom: 1.25rem;
+}
+.catalog-radar__section > label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.catalog-chip {
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding: 0.55rem 0.85rem;
+  margin-bottom: 0.35rem;
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+.catalog-chip:hover { background: rgba(255,255,255,0.04); color: var(--text-primary); }
+.catalog-chip.active {
+  background: rgba(34, 211, 238, 0.1);
+  color: var(--orbit-cyan);
+  border: 1px solid var(--holo-border);
+}
+
+.catalog-results__bar { margin-bottom: 1.5rem; }
+
+.catalog-loading {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.skeleton-card {
+  aspect-ratio: 0.75;
+  border-radius: var(--radius-holo);
+  background: linear-gradient(90deg, var(--panel-solid) 25%, rgba(255,255,255,0.04) 50%, var(--panel-solid) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@media (max-width: 900px) {
+  .catalog-filters-toggle { display: flex; }
+  .catalog-layout { grid-template-columns: 1fr; }
+  .catalog-radar {
+    display: none;
+    position: fixed;
+    inset: 0;
+    top: auto;
+    bottom: 0;
+    z-index: 300;
+    border-radius: var(--radius-portal) var(--radius-portal) 0 0;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  .catalog-radar.open { display: block; }
+}

@@ -1,0 +1,90 @@
+.docking-page {
+  min-height: calc(100vh - var(--nav-h));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+.docking-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 420px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+.docking-card__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(34,211,238,0.1);
+  border: 1px solid var(--holo-border);
+  color: var(--orbit-cyan);
+}
+.docking-card h1 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+}
+.docking-card > p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+.docking-card form { text-align: right; }
+.docking-error {
+  color: var(--error);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+.docking-footer {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.docking-footer a { color: var(--orbit-cyan); font-weight: 600; }
+
+.docking-demo {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+  text-align: right;
+}
+.docking-demo__label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+.docking-demo__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: rgba(255,255,255,0.02);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  text-align: right;
+}
+.docking-demo__btn:hover:not(:disabled) {
+  border-color: var(--holo-border);
+  background: rgba(34, 211, 238, 0.06);
+}
+.docking-demo__btn strong { display: block; font-size: 0.85rem; color: var(--text-primary); }
+.docking-demo__btn small { font-size: 0.72rem; color: var(--text-muted); }
+.docking-demo__btn--admin:hover:not(:disabled) {
+  background: rgba(167, 139, 250, 0.08);
+}
