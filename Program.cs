@@ -144,6 +144,7 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(
             Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] ?? throw new InvalidOperationException("JWT Key is missing!"))
         ),
+        RoleClaimType = System.Security.Claims.ClaimTypes.Role,
         ClockSkew = TimeSpan.Zero
     };
 });
@@ -197,10 +198,11 @@ using (var scope = app.Services.CreateScope())
     var db = scope.ServiceProvider.GetRequiredService<DataContext>();
     await db.Database.MigrateAsync();
 
-    var productRepo = scope.ServiceProvider.GetRequiredService<IProductRepository>();
-    await productRepo.SeedDemoProductsAsync();
-
     await DataSeeder.SeedAsync(scope.ServiceProvider);
+
+    var config = scope.ServiceProvider.GetRequiredService<IConfiguration>();
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
+    await DemoDataSeeder.SeedAsync(db, userManager, config);
 }
 
 app.Run();

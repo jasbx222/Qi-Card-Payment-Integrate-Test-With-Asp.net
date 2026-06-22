@@ -33,5 +33,24 @@ public static class DataSeeder
         {
             await userManager.AddToRoleAsync(admin, "Admin");
         }
+
+        // حساب مسافر تجريبي
+        const customerPhone = "07700000002";
+        var customer = await userManager.FindByNameAsync("demo_user");
+        if (customer is null)
+        {
+            customer = new AppUser
+            {
+                UserName = "demo_user",
+                PhoneNumber = customerPhone,
+                PhoneNumberConfirmed = true
+            };
+            await userManager.CreateAsync(customer, "User@123");
+            await userManager.AddToRoleAsync(customer, "Customer");
+        }
+        else if (!await userManager.IsInRoleAsync(customer, "Customer"))
+        {
+            await userManager.AddToRoleAsync(customer, "Customer");
+        }
     }
 }

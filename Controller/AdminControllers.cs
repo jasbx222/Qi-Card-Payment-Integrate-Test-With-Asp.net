@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using QCardPayment.dto;
 using QCardPayment.Models;
 using QCardPayment.Repositories;
@@ -206,8 +207,8 @@ public class AdminCustomersController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
-        var users = _db.Users.ToList();
-        var orders = _db.Orders.ToList();
+        var users = await _db.Users.ToListAsync();
+        var orders = await _db.Orders.ToListAsync();
         var result = users.Select(u =>
         {
             var userOrders = orders.Where(o => o.UserId == u.Id).ToList();

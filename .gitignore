@@ -1,0 +1,14 @@
+# Build
+bin/
+obj/
+
+# Logs
+logs/
+
+# IDE
+.vs/
+*.user
+
+# Frontend (committed separately)
+frontend/node_modules/
+frontend/dist/
