@@ -34,22 +34,22 @@ _userManager = userManager;
     {
        var user = await _userManager.Users.FirstOrDefaultAsync(x=>x.PhoneNumber == registerRequest.PhoneNumber);
         if (user!=null)
-        {
-            throw new NotSupportedException("user already exist !") ;
-        };
+            return BadRequest(new { message = "المستخدم موجود مسبقاً" });
+
         var newUser = new AppUser
         {
             PhoneNumber = registerRequest.PhoneNumber,
-       
+            PhoneNumberConfirmed = true,
              UserName =  registerRequest.Username
-
         };
 
+         var result = await _userManager.CreateAsync(newUser, registerRequest.Password);
+         if (!result.Succeeded)
+             return BadRequest(new { message = string.Join(", ", result.Errors.Select(e => e.Description)) });
 
-         await _userManager.CreateAsync(newUser, registerRequest.Password);
+         await _userManager.AddToRoleAsync(newUser, "Customer");
 
-        return Ok("user created successfully ");
-        
+        return Ok(new { message = "تم إنشاء الحساب بنجاح" });
     }
 
 
@@ -107,13 +107,15 @@ _userManager = userManager;
     await _userManager.ResetAccessFailedCountAsync(user);
 
     var token = _tokenService.GenerateToken(user);
+    var roles = await _userManager.GetRolesAsync(user);
     
     return new LoginResponse
     {
         IsSuccess = true,
         Token = token,
         PhoneNumber = user.PhoneNumber,
-        UserName = user.UserName
+        UserName = user.UserName,
+        Roles = roles.ToList()
     };
 }
   

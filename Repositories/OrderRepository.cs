@@ -40,6 +40,17 @@ public class OrderRepository : IOrderRepository
             .ToListAsync();
     }
 
+    public async Task<IEnumerable<Orders>> GetByUserIdAsync(string userId)
+    {
+        return await _db.Orders
+            .Include(o => o.Items)
+            .ThenInclude(i => i.Product)
+            .Include(o => o.Payments)
+            .Where(o => o.UserId == userId)
+            .OrderByDescending(o => o.Id)
+            .ToListAsync();
+    }
+
     public async Task<Orders?> GetByIdAsync(int id)
     {
         return await _db.Orders

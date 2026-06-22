@@ -90,8 +90,25 @@ builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IPaymentFlowService, PaymentFlowService>();
+builder.Services.AddScoped<CategoryRepository>();
+builder.Services.AddScoped<CouponRepository>();
+builder.Services.AddScoped<BannerRepository>();
+builder.Services.AddScoped<StoreSettingsRepository>();
+builder.Services.AddScoped<DashboardRepository>();
 
-builder.Services.AddScoped<TokenService>(); 
+builder.Services.AddScoped<TokenService>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Frontend", policy =>
+        policy.WithOrigins(
+                "http://localhost:5173",
+                "http://localhost:3000",
+                "http://127.0.0.1:5173")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials());
+});
 //====================Cashing //==============
 builder.Services.AddStackExchangeRedisCache(options =>
 {
@@ -163,6 +180,8 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseCors("Frontend");
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -180,6 +199,8 @@ using (var scope = app.Services.CreateScope())
 
     var productRepo = scope.ServiceProvider.GetRequiredService<IProductRepository>();
     await productRepo.SeedDemoProductsAsync();
+
+    await DataSeeder.SeedAsync(scope.ServiceProvider);
 }
 
 app.Run();

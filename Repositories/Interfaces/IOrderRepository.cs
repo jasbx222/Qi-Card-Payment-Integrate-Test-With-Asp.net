@@ -5,6 +5,7 @@ namespace QCardPayment.Repositories.Interfaces;
 public interface IOrderRepository
 {
     Task<IEnumerable<Orders>> GetAllAsync();
+    Task<IEnumerable<Orders>> GetByUserIdAsync(string userId);
     Task<Orders?> GetByIdAsync(int id);
     Task<Orders?> GetByIdForUserAsync(int id, string userId);
     Task<Orders> AddAsync(Orders order);

@@ -12,7 +12,6 @@ namespace QCardPayment.Controller;
 /// </summary>
 [ApiController]
 [Route("api/[controller]")]
-[Authorize]
 public class CheckoutController : ControllerBase
 {
     private readonly IPaymentFlowService _paymentFlowService;
@@ -31,6 +30,7 @@ public class CheckoutController : ControllerBase
     /// الخطوة التالية: وجّه العميل إلى FormUrl في الاستجابة
     /// </summary>
     [HttpPost]
+    [Authorize]
     public async Task<IActionResult> Checkout([FromBody] CheckoutRequest request, CancellationToken ct)
     {
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);

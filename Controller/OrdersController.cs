@@ -1,14 +1,14 @@
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using QCardPayment.dto;
 using QCardPayment.Models;
 using QCardPayment.Repositories.Interfaces;
-using QCardPayment.dto;
-using Microsoft.AspNetCore.Authorization;
 
 namespace QCardPayment.Controller;
 
 [ApiController]
 [Route("api/[controller]")]
-
 [Authorize]
 public class OrdersController : ControllerBase
 {
@@ -19,7 +19,30 @@ public class OrdersController : ControllerBase
         _orderRepository = orderRepository;
     }
 
+    [HttpGet("my")]
+    public async Task<IActionResult> GetMyOrders()
+    {
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        if (string.IsNullOrWhiteSpace(userId))
+            return Unauthorized();
+
+        var orders = await _orderRepository.GetByUserIdAsync(userId);
+        return Ok(orders);
+    }
+
+    [HttpGet("my/{id}")]
+    public async Task<IActionResult> GetMyOrder(int id)
+    {
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        if (string.IsNullOrWhiteSpace(userId))
+            return Unauthorized();
+
+        var order = await _orderRepository.GetByIdForUserAsync(id, userId);
+        return order is null ? NotFound() : Ok(order);
+    }
+
     [HttpGet]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> GetAll()
     {
         var orders = await _orderRepository.GetAllAsync();
@@ -29,14 +52,19 @@ public class OrdersController : ControllerBase
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
-        var order = await _orderRepository.GetByIdAsync(id);
-        if (order is null)
-            return NotFound();
+        if (User.IsInRole("Admin"))
+        {
+            var order = await _orderRepository.GetByIdAsync(id);
+            return order is null ? NotFound() : Ok(order);
+        }
 
-        return Ok(order);
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        var userOrder = await _orderRepository.GetByIdForUserAsync(id, userId!);
+        return userOrder is null ? NotFound() : Ok(userOrder);
     }
 
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Create([FromBody] CreateOrderRequest request)
     {
         if (request is null)
@@ -54,6 +82,7 @@ public class OrdersController : ControllerBase
     }
 
     [HttpPut("{id}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Update(int id, [FromBody] CreateOrderRequest request)
     {
         if (request is null)
@@ -72,6 +101,7 @@ public class OrdersController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(int id)
     {
         var deleted = await _orderRepository.DeleteAsync(id);
